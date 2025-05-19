@@ -1,1 +1,17 @@
+# Branch 1
+git checkout -b feature/subscribe-button
+# Add button styles to main.css
+echo ".subscribe-btn { background: blue; padding: 10px; }" >> assets/styles/main.css
+git add .
+git commit -m "Add subscribe button styles"
+git push --set-upstream origin feature/subscribe-button
+
+# Branch 2
+git checkout main
+git checkout -b feature/dark-theme
+# Add dark mode styles
+echo "body { background: black; color: white; }" >> assets/styles/main.css
+git add .
+git commit -m "Add dark theme styles"
+git push --set-upstream origin feature/dark-theme
 
